@@ -1,0 +1,238 @@
+* {
+    box-sizing: content-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+/* Bootstrap utilisé pour le header, plus grand que prévu */
+
+
+/* .row{
+	margin-right: 0 !important;
+	margin-left: 0 !important;
+} */
+
+
+/* Retirer toutes décoration des listes */
+
+ul {
+    list-style: none;
+}
+
+
+/* Peronnalisation de tous les :hover des liens */
+
+a:hover {
+    text-decoration: none !important;
+    border-bottom: 3px solid orangered;
+    color: black !important;
+    /* transition-duration: 0.5s; */
+    /* color: orangered !important; */
+}
+
+
+/* Les fonts */
+
+@font-face {
+    font-family: Roboto black;
+    font-weight: bold;
+    src: url('fonts/Roboto-Black.ttf');
+}
+
+@font-face {
+    font-family: Roboto bold;
+    font-weight: bold;
+    src: url('fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: Roboto light;
+    src: url('fonts/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: Roboto medium;
+    src: url('fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: Roboto thin;
+    src: url('fonts/Roboto-Thin.ttf');
+}
+
+
+/* navigation */
+
+
+/* nav {
+    display: flex !important;
+    justify-content: space-between;
+    padding: 1em;
+    border-bottom: 1px solid lightgray;
+} */
+
+
+/* .active{
+	color: orange;
+} */
+
+
+/* Parti logo */
+
+nav {
+    text-align: center;
+}
+
+.espace_logo img {
+    width: 8em;
+    height: 5em;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.partie_marque {
+    margin-bottom: 0;
+    border-bottom: 1px solid lightsalmon;
+    /* border-top: 1px solid lightgray; */
+    margin-bottom: 2em;
+}
+
+.marque {
+    font-size: 5em;
+    font-weight: bold;
+}
+
+
+/* menu */
+
+.menu_liens {
+    text-align: center;
+    margin-bottom: 2em;
+    /* z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.8;
+    background-color: rgb(248, 250, 252); */
+    /* height: 5em; */
+}
+
+.menu_liens a {
+    color: black;
+    margin-right: 1em;
+    font-size: 3em;
+}
+
+
+/* partie main du site */
+
+
+/* La première section : photo */
+
+.section_fond_orange {
+    border: 1px solid black;
+    background-color: #c64700;
+    /*ce4c00*/
+    margin-bottom: 2em;
+    position: static;
+}
+
+.photo_fond_orange img {
+    max-width: 100%;
+    width: 50%;
+    position: relative;
+    top: 3em;
+    left: 2em;
+}
+
+
+/* La deuxième section : meilleurs ventes */
+
+.section_ventes div {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5em;
+    padding-bottom: 3em;
+}
+
+.section_ventes figure {
+    margin: 1em;
+    width: 33%;
+    max-width: 100%;
+    /* height: 34.5em;
+    max-height: 100%; */
+}
+
+.section_ventes img {
+    width: 100%;
+    height: 20em;
+    border: 1px solid black;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 0.5em;
+    font-size: 5em !important;
+}
+
+
+/* Gérer le figcaption */
+
+figcaption {
+    width: 100%;
+    max-width: 100%;
+    font-weight: bold;
+    text-align: center;
+    /* background-color: lightgoldenrodyellow; */
+}
+
+.fig_1 {
+    margin-bottom: 1em;
+}
+
+.fig_2 {
+    margin-top: 1em;
+    /* background-color: lightgreen; */
+}
+
+figcaption .photo_titre {
+    text-transform: uppercase;
+}
+
+figcaption a {
+    text-transform: uppercase;
+    color: black;
+    padding-bottom: 0.2em;
+}
+
+
+/* troisième section : section explication du concept */
+
+.section_concept {
+    /* border: 1px solid black; */
+    background-color: rgb(248, 250, 252);
+}
+
+.section_concept div {
+    text-align: justify;
+    margin: 0 2em 2em 2em;
+    padding-top: 0.5em;
+    font-size: 1.5em;
+}
+
+
+/* Au dessus de 922px */
+
+@media screen and (max-width: 1000px) {
+    .marque {
+        font-size: 2em;
+    }
+    .menu_liens a {
+        font-size: 1.5em;
+    }
+}
