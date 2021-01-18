@@ -4,15 +4,6 @@
 }
 
 
-/* Bootstrap utilisé pour le header, plus grand que prévu */
-
-
-/* .row{
-	margin-right: 0 !important;
-	margin-left: 0 !important;
-} */
-
-
 /* Retirer toutes décoration des listes */
 
 ul {
@@ -26,8 +17,6 @@ a:hover {
     text-decoration: none !important;
     border-bottom: 3px solid orangered;
     color: black !important;
-    /* transition-duration: 0.5s; */
-    /* color: orangered !important; */
 }
 
 
@@ -68,24 +57,26 @@ a:hover {
 
 /* navigation */
 
-
-/* nav {
+nav {
     display: flex !important;
     justify-content: space-between;
     padding: 1em;
     border-bottom: 1px solid lightgray;
-} */
-
-
-/* .active{
-	color: orange;
-} */
+}
 
 
 /* Parti logo */
 
-nav {
-    text-align: center;
+.espace_logo {
+    display: flex;
+}
+
+.espace_logo p {
+    font-size: 3em;
+    align-self: center;
+    font-weight: bold;
+    margin-bottom: 0px;
+    padding: 0 1em;
 }
 
 .espace_logo img {
@@ -95,37 +86,54 @@ nav {
     max-height: 100%;
 }
 
-.partie_marque {
-    margin-bottom: 0;
-    border-bottom: 1px solid lightsalmon;
-    /* border-top: 1px solid lightgray; */
-    margin-bottom: 2em;
-}
-
-.marque {
-    font-size: 5em;
-    font-weight: bold;
-}
-
 
 /* menu */
 
+.espace_liens {
+    align-content: center;
+}
+
+
+/* En commentaire, propriété pour essayer de fixer la barre du menu */
+
 .menu_liens {
-    text-align: center;
-    margin-bottom: 2em;
+    align-self: center;
+    /* margin-bottom: 2em; */
+    /* opacity: 0.8;
+    background-color: rgb(248, 250, 252);
+    height: 5em; */
     /* z-index: 2;
     position: fixed;
-    top: 0;
-    width: 100%;
-    opacity: 0.8;
-    background-color: rgb(248, 250, 252); */
-    /* height: 5em; */
+    top: 0; */
+    /* width: 100%; */
 }
 
 .menu_liens a {
     color: black;
     margin-right: 1em;
-    font-size: 3em;
+    font-size: 2em;
+}
+
+.menu_icones {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1em;
+}
+
+.menu_icones a {
+    display: flex;
+    color: black;
+    font-size: 1em;
+    margin-right: 1.5em;
+}
+
+.menu_icones a p {
+    margin-right: 0.5em;
+    margin-bottom: 0;
+}
+
+.menu_icones a i {
+    padding-top: 0.15em;
 }
 
 
@@ -229,10 +237,10 @@ figcaption a {
 /* Au dessus de 922px */
 
 @media screen and (max-width: 1000px) {
-    .marque {
-        font-size: 2em;
-    }
-    .menu_liens a {
+    .espace_logo p {
         font-size: 1.5em;
+    }
+    .menu_liens {
+        font-size: 0.5em;
     }
 }
